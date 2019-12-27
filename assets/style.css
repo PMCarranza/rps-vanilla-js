@@ -1,0 +1,86 @@
+body{
+    width: 90%;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont{
+    color: blue;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2em;
+}
+
+div.boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#against{
+    margin-top: 75%;
+}
+
+#host-guess{
+    margin-top: 65%;
+}
+
+button{
+    border-style: none;
+    width: 75%;
+}
+
+img{
+    width: 40%;
+    margin-bottom: 20%;
+}
+
+#host-guess{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    border-top: .5em solid slategray;
+}
+#result{
+    color: blue;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.scores{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#away-team{
+    color:red;
+}
+
+#ties{
+    color: gray;
+}
+
+#home-team{
+    font-size: 4em;
+    color: green;
+}
+
+#display-total{
+    display: flex;
+    flex-direction: column;
+}
+
+#display-total{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: grey;
+}
