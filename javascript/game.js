@@ -22,7 +22,7 @@ var intervalId;
 $('button').on('click', function () {
     userClick = ($(this).val());
     // the user's choice is:
-    console.log('userClick -> ', userClick);
+    // console.log('userClick -> ', userClick);
 
     // converting the choice to an integer for comparison purposes
     userGuess = parseInt(userClick);
@@ -30,9 +30,8 @@ $('button').on('click', function () {
     $('#host-guess').empty();
     playGame();
     roundCounter++;
-    console.log('round Counter = ', roundCounter);
+    // console.log('round Counter = ', roundCounter);
     if (roundCounter === 5) {
-        console.log('T H E  E N D ');
         displayResults();
     };
 });
@@ -42,7 +41,7 @@ function playGame() {
     // randomly generate the host's guess
     // 1 will be rock, 2 will be paper, 3 will be scissors for the purpose of this exercise
     var randomGuess = Math.floor(Math.random() * 3 + 1);
-    console.log('randomGuess -> ', randomGuess);
+    // console.log('randomGuess -> ', randomGuess);
 
     var hostTool = $('<img>');
     hostTool.addClass('host-side');
@@ -54,7 +53,7 @@ function playGame() {
         $('#ties').empty();
         console.log('tie!');
         tieCounter++
-        console.log('Ties ', tieCounter);
+        // console.log('Ties ', tieCounter);
         tie = $('<div>');
         tie.text('great minds think alike');
         $('#result').empty();
@@ -66,7 +65,7 @@ function playGame() {
     } else if
         (userGuess < randomGuess) {
         $('#home-team').empty();
-        console.log('Host wins this one!');
+        // console.log('Host wins this one!');
         hostWins++;
         console.log('Host score ', hostWins);
         toHost = $('<div>');
@@ -78,7 +77,7 @@ function playGame() {
 
     } else {
         $('#away-team').empty()
-        console.log('this one goes to you!')
+        // console.log('this one goes to you!')
         userWins++;
         console.log('User score ', userWins);
         toUser = $('<div>');
